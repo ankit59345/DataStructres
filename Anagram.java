@@ -12,12 +12,12 @@ public class Anagram {
         }
         Arrays.sort(c1);
         Arrays.sort(c2);
-        for(int i=0; i<c1.length; i++) {
-        	if(c1[i] != c2[i]) {
-        		return false;
-        	}
+        String s1 = new String(c1);
+        String s2 = new String(c2);
+        if(s1.equalsIgnoreCase(s2)) {
+        	return true;
         }
-        return true;
+        return false;
     }
 
     public static void main(String args[]){
