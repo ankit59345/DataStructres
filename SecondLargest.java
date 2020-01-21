@@ -21,7 +21,6 @@ public class SecondLargest {
 				else if(arr[i]<fLr && arr[i]>sLr) {
 					sLr = arr[i];
 				}
-//				7 80 2 50 1 7 -1
 			}
 		}
 		System.out.println("Largest-"+fLr+"\nSecond-"+sLr);
