@@ -47,25 +47,20 @@ public class RemoveDuplicatesSortedLL {
 		else {
 			Node temp1 = head;
 			Node temp2 = head;
-			int i=0, j=0;
 			while(temp2 != null) {
 				if(temp1.data == temp2.data) {
 					if(temp1.next == null)
 						break;
 					if(temp1.data == temp1.next.data) {
 						temp2 = temp2.next;
-						j++;
 						continue;
 					}
 					else {
 						temp1 = temp1.next;
-						i++;
-						j++;
 						temp2 = temp2.next;
 					}
 				}
 				else {
-					i++;
 					temp1.next = temp2;
 					temp1 = temp1.next;
 				}
